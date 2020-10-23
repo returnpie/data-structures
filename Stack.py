@@ -28,7 +28,7 @@ class Stack:
 
         return self.stack[-1]
 
-    # has 0(1) running time
+    # has O(1) running time
     def is_empty(self):
         return self.stack == []
 
