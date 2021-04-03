@@ -6,11 +6,11 @@ class Stack:
     def __init__(self):
         self.stack = []
 
-    # insert item into the stack
+    # insert item into the stack // O(1)
     def push(self, data):
         self.stack.append(data)
 
-    # remove and return the last item we have inserted (LIFO)
+    # remove and return the last item we have inserted (LIFO) // O(1)
     def pop(self):
 
         if self.stack_size() < 1:
@@ -20,7 +20,7 @@ class Stack:
         del self.stack[-1]
         return data
 
-    # it returns the last item without removing it
+    # it returns the last item without removing it // O(1)
     def peek(self):
 
         if self.stack_size() < 1:
